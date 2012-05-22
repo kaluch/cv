@@ -1,0 +1,81 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.9]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Lucas}
+\familyname{SOUCHET}
+\title{Elève-Ingénieur ROBOTIQUE}               % optional, remove the line if not wanted
+\address{2 rue Vitry}{93100 MONTREUIL}    % optional, remove the line if not wanted
+\mobile{+33 675668930}                    % optional, remove the line if not wanted
+\phone{+1 5127435922}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{souchet@polytech.upmc.fr}                      % optional, remove the line if not wanted
+%\homepage{homepage (optional)}                % optional, remove the line if not wanted
+\extrainfo{03/11/1989\\Permis B} % optional, remove the line if not wanted
+\photo[75pt]{identite_pro.jpg}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+\section{Formation}
+\cventry{Automne 2011}{M.E Graduate Student}{University of Texas at Austin}{Austin, TX, USA}{}{Semestre d'étude dans les départements de Mechanical Engineering et de Computer and Electrical Engineering dans le cadre d'un programme d'échange. GPA : 3.66}
+\cventry{Depuis 2009}{Cycle ingénieur}{Polytech'Paris-UPMC - www.polytech.upmc.fr}{}{}{Spécialité Robotique (Mécanique - Eléctronique - Automatique)}  % arguments 3 to 6 can be left empty
+\cventry{2007-2009}{Classe préparatoire intégrée}{Polytech'Paris-UPMC}{}{}{}
+\cventry{2007}{Baccalauréat S (SI)}{}{}{\textit{Mention Bien}}{}
+
+\section{Expériences professionnelles}
+\cventry{2011}{Stagiaire technicien}{ALSTOM Transport}{Saint-Ouen}{}{\textit{Développement de fonctionnalités dans un outil de conception de voies.}\newline{}Appréhension de contraintes liées aux infrastuctures ferroviaires, appropriation des process, développement d'algorithmes et implémentations en LUA ,et suivi d'évolutions avec un sous-traitant.}
+\cventry{2010-2011}{Responsable Commande/Electronique}{ISIR}{Paris}{}{\textit{Projet de réalisation d'un prototype de canne robotisée dans le cadre de la rééducation des personnes à mobilité réduite pour l'Institut des Systèmes Intelligents et de Robotique en partenariat avec Polytech'Paris-UPMC}\newline{}Sensibilisation aux problématiques de conception : dimensionnement des actionneurs, choix de réalisation mécanique, bus de communication, cross-compilation dans le cadre d'un système embarqué.}
+\cventry{2010}{Stagiaire technicien}{ERDF}{La Défense - Courbevoie}{}{\textit{Mise à jour et ajout de nouvelles fonctionnalités dans un outil de gestion qualité au sein du GTAR.}\newline{}Conception d'IHM, retour d'expérience utilisateur, sécurisation de l'application, suivi avec la direction.}
+
+\section{Compétences}
+\cvcomputer{Ingénierie}{Matlab ,SolidWorks, Outils de gestion projet, Algorithmique, logique de process}{}{}
+\cvcomputer{Robotique}{Vision, Traitement d'image, Automatique, Systèmes embarqués}{}{}
+\cvcomputer{Programmation}{C, LUA, POO (Java, C++), PHP/MySQL, Cross compilation, versionnage (Git, SVN)}{}{}
+\cvcomputer{Electronique}{Arduino, Gumstix, Communication port série, Bus CAN, Bus SPI}{}{}
+\cvcomputer{Webmastering}{HTML/CSS3, Gestion FTP, Ajax/JavaScript}{}{}
+\cvcomputer{Informatique}{Maîtrise de MacOS, Windows et Linux (shell)}{}{}
+\subsection{Langues}
+\cvlanguage{Français}{Langue Maternelle}{}
+\cvlanguage{Anglais}{Courant}{TOEIC : 935, TOEFL iBT : 105/120}
+\cvlanguage{Allemand}{Notions}{}
+\section{Activités personnelles}
+\categorie{Sportives}{Associatives}
+\vline{}
+\hobby{2004-2006}{\small 12 ans de \textbf{Handball} en compétition (Niveau région, PIFE)}{2010-2011}{Webmaster du Bureau des etudiants de Polytech'Paris-UPMC}
+\hobby{Depuis 1999}{\textbf{Jeune arbitre Officiel} de la ligue de Handball PIFE}{2007-2009}{Webmaster de l'association de cinéma Squid}
+\end{document}
+%% end of file `template_en.tex'.
